@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 
 import Link from "next/link"
 import { Mail, Phone, MapPin, Facebook, Youtube, Instagram } from "lucide-react"
@@ -28,9 +29,15 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="#home" className="flex items-center gap-3 mb-6 group">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center transition-transform group-hover:scale-105">
-                <span className="text-primary-foreground font-bold text-xl">A</span>
-              </div>
+            <Image
+              src="/images/logo3.png"
+              alt="Arsalan Solutions"
+              width={180}
+              
+              height={100}
+              className="h-14 w-auto object-contain"
+              priority
+            />
               <span className="text-xl font-bold text-foreground">
                 Arsalan Solutions
               </span>
