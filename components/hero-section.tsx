@@ -42,7 +42,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-20">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-32">
         <div className="max-w-4xl mx-auto text-center">
 
           {/* Badge */}
@@ -77,8 +77,9 @@ export function HeroSection() {
           </div>
 
           {/* Buttons */}
+          {/* Buttons */}
           <div
-            className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            className={`flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
           >
             {/* Primary Button */}
@@ -93,7 +94,7 @@ export function HeroSection() {
               </Link>
             </Button>
 
-            {/* Secondary Button (FIXED - now looks clickable) */}
+            {/* Secondary Button */}
             <Button
               asChild
               size="lg"
@@ -107,7 +108,7 @@ export function HeroSection() {
 
       {/* Scroll Indicator */}
       <div
-        className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        className={`absolute bottom-4 md:bottom-8 lg:bottom-3 left-1/2 -translate-x-1/2 transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
       >
         <Link
