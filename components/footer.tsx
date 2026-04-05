@@ -30,7 +30,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="#home" className="flex items-center gap-3 mb-6 group">
             <Image
-              src="/images/logo3.png"
+              src="/images/logo2.jpeg"
               alt="Arsalan Solutions"
               width={180}
               

@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
     const data = await resend.emails.send({
       from: "Arsalan Solutions <abarekzay@arsalansolutions.com>",
-      to: ["hdhashmat@gmail.com"],
+      to: ["abarekzay@arsalansolutions.com"],
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `
         <h2>New Contact Request</h2>
@@ -22,8 +22,11 @@ export async function POST(req: Request) {
       `,
     })
 
+    console.log("EMAIL RESPONSE:", data)
+
     return Response.json({ success: true, data })
   } catch (error) {
+    console.error("EMAIL ERROR:", error)
     return Response.json({ success: false, error })
   }
 }

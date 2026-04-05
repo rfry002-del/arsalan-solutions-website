@@ -3,15 +3,13 @@
 import { useEffect, useRef, useState } from "react"
 
 const naicsCodes = [
+  { code: "423430", description: "Computer & Software Merchant Wholesalers" },
+  { code: "333999", description: "Industrial Machinery (Other)" },
+  { code: "541519", description: "Other IT & Computer Services" },
+  { code: "541512", description: "Computer Systems Design" },
   { code: "541611", description: "Administrative Management & General Management Consulting Services" },
-  { code: "541612", description: "Human Resources Consulting Services" },
-  { code: "541613", description: "Marketing Consulting Services" },
-  { code: "541614", description: "Process, Physical Distribution, & Logistics Consulting Services" },
   { code: "541618", description: "Other Management Consulting Services" },
-  { code: "541690", description: "Other Scientific and Technical Consulting Services" },
-  { code: "541990", description: "All Other Professional, Scientific, & Technical Services" },
   { code: "561110", description: "Office Administrative Services" },
-  { code: "561210", description: "Facilities Support Services" },
   { code: "561320", description: "Temporary Help Services" },
   { code: "561499", description: "All Other Business Support Services" },
   { code: "561990", description: "All Other Support Services" },

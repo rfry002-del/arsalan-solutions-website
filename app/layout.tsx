@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   keywords: ['federal contracting', 'government contracts', 'SAM.gov', 'procurement', 'NAICS', 'federal acquisition'],
   authors: [{ name: 'Arsalan Solutions' }],
 icons: {
-  icon: '/favicon.png',
-  apple: '/favicon.png',
+  icon: '/logo2.jpeg',
+  apple: '/logo2.jpeg',
 },
 }
 

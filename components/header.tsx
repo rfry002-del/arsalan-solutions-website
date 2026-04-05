@@ -1,6 +1,6 @@
 "use client"
-import Image from "next/image"
 
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
@@ -32,16 +32,17 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg"
-          : "bg-transparent"
+          ? "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm"
+          : "bg-white/80 backdrop-blur-sm"
       )}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
+
           {/* Logo */}
           <Link href="#home" className="flex items-center gap-3 group">
             <Image
-              src="/images/logo3.png"
+              src="/images/logo2.jpeg"
               alt="Arsalan Solutions"
               width={180}
               height={100}
@@ -49,9 +50,9 @@ export function Header() {
               priority
             />
 
-            <span className="text-lg font-semibold text-white tracking-wide">
+            <span className="text-lg font-semibold text-gray-900 tracking-wide">
               ARSALAN
-              <span className="text-yellow-400 ml-1">SOLUTIONS</span>
+              <span className="text-blue-600 ml-1">SOLUTIONS</span>
             </span>
           </Link>
 
@@ -61,23 +62,28 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-medium"
+                className="text-gray-700 hover:text-primary transition-colors duration-200 text-sm font-medium"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          {/* CTA Button */}
+          {/* Desktop CTA */}
           <div className="hidden lg:block">
-            <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-200 hover:scale-105">
-              <Link href="#contact">Get Started</Link>
+            <Button
+              asChild
+              className="bg-primary text-white hover:bg-primary/90 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md"
+            >
+              <Link href="#contact">
+                Get Started
+              </Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-foreground p-2"
+            className="lg:hidden text-gray-800 p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -92,19 +98,28 @@ export function Header() {
             isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           )}
         >
-          <nav className="flex flex-col gap-4 py-6 border-t border-border">
+          <nav className="flex flex-col gap-4 py-6 border-t border-gray-200 bg-white">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-muted-foreground hover:text-primary transition-colors duration-200 text-base font-medium"
+                className="text-gray-700 hover:text-primary transition-colors duration-200 text-base font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+
+            {/* Mobile CTA */}
+            <Button
+              asChild
+              className="mt-4 bg-primary text-white hover:bg-primary/90 shadow-sm hover:shadow-md transition-all duration-300"
+            >
+              <Link
+                href="#contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-center"
+              >
                 Get Started
               </Link>
             </Button>
