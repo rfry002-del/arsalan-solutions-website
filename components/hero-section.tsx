@@ -44,12 +44,11 @@ export function HeroSection() {
       {/* Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-20">
         <div className="max-w-4xl mx-auto text-center">
-          
+
           {/* Badge */}
           <div
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200 mb-8 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
+            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200 mb-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}
           >
             <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
             <span className="text-blue-700 text-sm font-medium">
@@ -59,29 +58,28 @@ export function HeroSection() {
 
           {/* Headline */}
           <h1
-            className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 transition-all duration-700 delay-100 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+            className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
           >
             Delivering Federal Contracting Excellence with{" "}
             <span className="text-blue-600">Precision & Compliance</span>
           </h1>
 
           {/* Subtext */}
-          <p
-            className={`text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed transition-all duration-700 delay-200 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+          <div
+            className={`inline-block bg-white/55 backdrop-blur-md px-6 py-3 rounded-2xl shadow-md border border-white/40 mb-10 transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
           >
-            Arsalan Solutions supports U.S. government agencies with sourcing,
-            bidding, and execution through SAM.gov.
-          </p>
+            <p className="text-gray-800 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+              Arsalan Solutions supports U.S. government agencies with sourcing,
+              bidding, and execution through SAM.gov.
+            </p>
+          </div>
 
           {/* Buttons */}
           <div
-            className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-300 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+            className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
           >
             {/* Primary Button */}
             <Button
@@ -109,9 +107,8 @@ export function HeroSection() {
 
       {/* Scroll Indicator */}
       <div
-        className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-700 delay-500 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
+        className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
       >
         <Link
           href="#about"
