@@ -10,7 +10,6 @@ const logos = [
   "/images/logos/d.jpeg",
   "/images/logos/e.png",
   "/images/logos/f.jpeg",
-  "/images/logos/g.jpeg",
   "/images/logos/h.png",
   "/images/logos/i.jpeg",
   "/images/logos/j.jpeg",
