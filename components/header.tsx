@@ -42,7 +42,7 @@ export function Header() {
           {/* Logo */}
           <Link href="#home" className="flex items-center gap-3 group">
             <Image
-              src="/images/logo2.jpeg"
+              src="/images/logo2.png"
               alt="Arsalan Solutions"
               width={180}
               height={100}
@@ -50,7 +50,7 @@ export function Header() {
               priority
             />
 
-            <span className="text-lg font-semibold text-gray-900 tracking-wide">
+            <span className="text-lg font-semibold text-blue-600 tracking-wide">
               ARSALAN
               <span className="text-blue-600 ml-1">SOLUTIONS</span>
             </span>

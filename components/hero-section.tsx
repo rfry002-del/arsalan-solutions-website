@@ -57,13 +57,14 @@ export function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1
-            className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-          >
-            Delivering Federal Contracting Excellence with{" "}
-            <span className="text-blue-600">Precision & Compliance</span>
-          </h1>
+<h1
+  className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6 transition-all duration-700 delay-100 drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)] ${
+    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+  }`}
+>
+  Delivering Federal Contracting Excellence with{" "}
+  <span className="text-blue-500">Precision & Compliance</span>
+</h1>
 
           {/* Subtext */}
           <div
@@ -107,18 +108,19 @@ export function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-      <div
-        className={`absolute bottom-4 md:bottom-8 lg:bottom-3 left-1/2 -translate-x-1/2 transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-      >
-        <Link
-          href="#about"
-          className="flex flex-col items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors group"
-        >
-          <span className="text-sm font-medium">Scroll to explore</span>
-          <ChevronDown className="h-5 w-5 animate-bounce" />
-        </Link>
-      </div>
+<div
+  className={`absolute bottom-4 md:bottom-8 lg:bottom-3 left-1/2 -translate-x-1/2 transition-all duration-700 delay-500 ${
+    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+  }`}
+>
+  <Link
+    href="#about"
+    className="flex flex-col items-center gap-2 text-white hover:text-blue-500 transition-colors group drop-shadow-[0_4px_10px_rgba(0,0,0,0.6)]"
+  >
+    <span className="text-sm font-medium">Scroll to explore</span>
+    <ChevronDown className="h-5 w-5 animate-bounce" />
+  </Link>
+</div>
     </section>
   )
 }

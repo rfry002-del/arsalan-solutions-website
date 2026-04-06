@@ -30,7 +30,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="#home" className="flex items-center gap-3 mb-6 group">
             <Image
-              src="/images/logo2.jpeg"
+              src="/images/logo2.png"
               alt="Arsalan Solutions"
               width={180}
               
@@ -64,7 +64,7 @@ export function Footer() {
               </a>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4" />
-                Fredericksburg, VA
+                16 Bealton Ct, Fredericksburg, VA, 22406
               </div>
             </div>
             {/* Social Media */}

@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
+import { PartnersSection } from "@/components/partners-section"
 import { AboutSection } from "@/components/about-section"
 import { CapabilitiesSection } from "@/components/capabilities-section"
 import { DifferentiatorsSection } from "@/components/differentiators-section"
@@ -15,6 +16,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Header />
       <HeroSection />
+      <PartnersSection/>
       <AboutSection />
       <CapabilitiesSection />
       <DifferentiatorsSection />

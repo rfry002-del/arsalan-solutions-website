@@ -124,7 +124,7 @@ export function ContactSection() {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-primary" />
-                Fredericksburg, VA
+                16 Bealton Ct, Fredericksburg, VA, 22406
               </div>
             </div>
           </div>
